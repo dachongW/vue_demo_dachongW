@@ -1,0 +1,235 @@
+
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  outline: none;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Microsoft Yahei";
+  -webkit-text-size-adjust: 100%;
+  color: #e5e5e5;
+  background-color: #2B2B2B;
+}
+
+img,
+select,
+input,
+label,
+textarea {
+  vertical-align: middle;
+}
+
+*,
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+img {
+  border: none;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  display: block;
+  overflow: hidden;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: "\0020";
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #b2f2ff
+}
+
+a.not-allowed {
+  cursor: not-allowed;
+}
+
+a.cursor-text {
+  cursor: text;
+}
+
+.anchorBL {
+  display: none;
+}
+
+:-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+input:focus,
+input:hover {
+  border-color: #406a80;
+}
+
+#app {
+
+}

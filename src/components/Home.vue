@@ -1,19 +1,38 @@
 <template>
-  <div class="home">
-    <span>这里是home</span>
-    <router-link :to="{name:'page'}"><span>跳转到page</span></router-link>
+  <div id="home">
+    <span>home</span>
+    <headerComponent></headerComponent>
+    <div id="main">
+      <aSideMenuComponent></aSideMenuComponent>
+      <div id="container">
+        <router-view></router-view>
+      </div>
+    </div>
   </div>
 </template>
-<script>
-export default {
-  name: 'home',
-  data () {
-    return {
 
-    }
-  },
-}
+<script>
+  import Router from 'vue-router'
+  import headerComponent from './common/header'
+  import aSideMenuComponent from './common/asidemenu'
+  export default {
+    name: 'home',
+    components: { headerComponent,aSideMenuComponent},
+  }
 </script>
 <style scoped>
-
+  #main{
+    border-top: 1px solid #111619;
+    position: relative;
+    z-index: 1;
+    padding: 0 0px 20px;
+    overflow-x: hidden;
+  }
+  #container{
+    position: relative;
+    padding: 0;
+    min-width: 900px;
+    margin: 0 auto;
+    margin-left: 49px;
+  }
 </style>

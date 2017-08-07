@@ -36,38 +36,34 @@ Vue.use(Router)
         requiresAuth: false
       }
     },
-    {
-      path: '/page',
-      name: 'page',
-      component: page,
-      meta: {
-        title: '分页',
-        requiresAuth: true
-      }
-    },
     // {
-    //   path: '/demo',
-    //   component: home,
-    //   children: [
-    //     {
-    //       path: '/',
-    //       redirect: '/demo/page',
-    //     },
-    //     {
-    //       path: '/page',
-    //       name: 'page',
-    //       component: page,
-    //       meta: {
-    //         title: "page",
-    //         requiresAuth: true
-    //       }
-    //     }
-    //   ],
+    //   path: '/page',
+    //   name: 'page',
+    //   component: page,
     //   meta: {
-    //     title: 'demo',
+    //     title: '分页',
     //     requiresAuth: true
     //   }
     // },
+    {
+      path: '/demo',
+      component: home,
+      children: [
+        {
+          path: '/',
+          redirect: '/demo/page',
+        },
+        {
+          path: '/page',
+          name: 'page',
+          component: page,
+          meta: {
+            title: "page",
+            requiresAuth: true
+          }
+        }
+      ],
+    },
     // {
     //   path: '',
     //   redirect: '/home/page'
