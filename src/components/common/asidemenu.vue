@@ -5,7 +5,7 @@
         <i class="arrow-left"><router-link :to="{name:'page'}"><span>跳转到page</span></router-link></i>
       </li>
       <li>
-        <i class="arrow-left"><router-link :to="{name:'pass_value'}"><span>跳转到pass_value</span></router-link></i>
+        <i class="arrow-left"><router-link :to="{name:'verify'}"><span>跳转到正则</span></router-link></i>
       </li>
         <li>
             <i class="arrow-left"><router-link :to="{name:'tree'}"><span>跳转到tree</span></router-link></i>

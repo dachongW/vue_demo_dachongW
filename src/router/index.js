@@ -5,6 +5,7 @@ import server404 from '@/components/404'
 import home from '@/components/Home'
 
 import page from '@/components/demo/01_page/page'
+import verify from '@/components/demo/02_正则组件/verify'
 
 import pass_value from '@/components/example/01_pass_value/faster'
 import tree from '@/components/example/test/tree'
@@ -58,6 +59,15 @@ Vue.use(Router)
           component: page,
           meta: {
             title: "page",
+            requiresAuth: true
+          }
+        },
+        {
+          path: '/verify',
+          name: 'verify',
+          component: verify,
+          meta: {
+            title: "verify",
             requiresAuth: true
           }
         }
