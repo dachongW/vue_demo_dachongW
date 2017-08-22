@@ -22,4 +22,7 @@
 </script>
 
 <style scoped>
+  .page{
+    background-color: #323232;
+  }
 </style>

@@ -32,7 +32,9 @@
     position: relative;
     padding: 0;
     min-width: 900px;
+    min-height: 500px;
     margin: 0 auto;
-    margin-left: 49px;
+    margin-left: 118px;
+    margin-top: 40px;
   }
 </style>

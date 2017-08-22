@@ -6,6 +6,10 @@ import home from '@/components/Home'
 
 import page from '@/components/demo/01_page/page'
 
+import pass_value from '@/components/example/01_pass_value/faster'
+import tree from '@/components/example/test/tree'
+import test from '@/components/example/test/test'
+
 Vue.use(Router)
 
  const router = new Router({
@@ -37,14 +41,9 @@ Vue.use(Router)
       }
     },
     // {
-    //   path: '/page',
-    //   name: 'page',
-    //   component: page,
-    //   meta: {
-    //     title: '分页',
-    //     requiresAuth: true
-    //   }
-    // },
+    //   path: '',
+    //   redirect: '/home/page'
+    // }
     {
       path: '/demo',
       component: home,
@@ -64,10 +63,43 @@ Vue.use(Router)
         }
       ],
     },
-    // {
-    //   path: '',
-    //   redirect: '/home/page'
-    // }
+    {
+      path: 'example',
+      component: home,
+      children: [
+        {
+          path: '/',
+          redirect: '/example/pass_value'
+        },
+        {
+          path: '/pass_value',
+          name: 'pass_value',
+          component: pass_value,
+          meta: {
+            title: "pass_value",
+            requiresAuth: true
+          }
+        },
+        {
+          path: '/tree',
+          name: 'tree',
+          component: tree,
+          meta: {
+            title: "tree",
+            requiresAuth: true
+          }
+        },
+        {
+          path: '/test',
+          name: 'test',
+          component: test,
+          meta: {
+            title: "test",
+            requiresAuth: true
+          }
+        }
+      ]
+    }
   ]
 })
 export default router

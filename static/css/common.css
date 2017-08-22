@@ -145,8 +145,8 @@ body {
   font-size: 16px;
   font-family: "Microsoft Yahei";
   -webkit-text-size-adjust: 100%;
-  color: #e5e5e5;
   background-color: #2B2B2B;
+  color: #e5e5e5;
 }
 
 img,
@@ -185,7 +185,7 @@ img {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #fff;
+  color: #e5e5e5;
 }
 
 a:hover {

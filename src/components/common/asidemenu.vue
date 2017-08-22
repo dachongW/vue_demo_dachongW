@@ -2,11 +2,14 @@
    <div class="aside" id="asideComponent">
     <ul class="menu" id="menu">
       <li>
-        <i class="arrow-left">page</i>
+        <i class="arrow-left"><router-link :to="{name:'page'}"><span>跳转到page</span></router-link></i>
       </li>
       <li>
-        <i class="arrow-left"></i>
+        <i class="arrow-left"><router-link :to="{name:'pass_value'}"><span>跳转到pass_value</span></router-link></i>
       </li>
+        <li>
+            <i class="arrow-left"><router-link :to="{name:'tree'}"><span>跳转到tree</span></router-link></i>
+        </li>
     </ul>
 
   </div>
@@ -48,8 +51,7 @@ export default {
  }
 .arrow-left{
   display: inline-block;
-  width: 100%;
+  width: 98%;
   height: 30px;
-  background-color: #2B2B2B;
 }
 </style>
