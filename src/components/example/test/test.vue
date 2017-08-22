@@ -1,7 +1,7 @@
 <template>
   <div class="test">
     <input type="button" v-model="aaa">
-    <select class="" v-model="changeselect" ref="dictida" @change="showType()" >
+    <select class="changeselect" v-model="changeselect" ref="dictida" @change="showType()" >
       <option disabled>请选择</option>
       <option value="aaa" >aaa</option>
       <option value="bbb" >bbb</option>
@@ -23,6 +23,7 @@ export default {
   },
   methods: {
     aaafun(){
+      $(".changeselect").addClass("abc")
       this.aaa = 123
       this.changeselect = "bbb"
     }
@@ -30,5 +31,7 @@ export default {
 }
 </script>
 <style scoped>
-
+.abc{
+  font-size: 30px;
+}
 </style>
